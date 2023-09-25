@@ -1,0 +1,33 @@
+JavaScript:
+- Enfoque dinámico
+- Interactividad dinámica
+- Describe la estrucutra de una página we semánticamente y orieginalmente
+- Basado en eventos
+- Imperativo porque se muestra claramento que es lo que hace la página 
+
+Variables:
+- JavaScript distingue mayúsculas de minúsculas
+scope:alcance
+- var: alcance de función, trabaja con hoisting
+- let: alcance de bloque, no trabaja con hoisting
+- const alcance de bloque, no trabaja con hoisting
+
+Tipos de datos:
+- String
+- Number
+- Boolean
+- Array
+- Objeect
+
+Operadores:
+- Addition (+)
+- Subtraction, Multiplication, Division (-, *, /)
+- Assignment (=)
+- Equality (===)
+- Not, Does-notequal (!, !==)
+
+Funciones:
+- forma de empaquetar la funcionalidad
+
+*nin state*
+*tutorial de javascirpt moderm*

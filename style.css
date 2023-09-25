@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*----------------------------------------------------------*/
+
+/*CUERPO 1*/
+
+.cuerpo{
+    display: flex;
+}
+
+.primer-cuerpo{
+    width: 70%;
+}
+
+.segundo-cuerpo{
+    width: 1%;
+}
+
+.segundo-cuerpo h2{
+    text-align: center;
+}
+
+/*----------------------------------------------------------*/
+
+/* BARRA DE NAVEGACION*/
+.barra-navegacion{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ddddddc5;
+    padding: 2%;
+    display: flex;
+    margin: auto;
+}
+
+.barra-navegacion h1{
+    color: #374342;
+    font-family: sans-serif;
+}
+
+.material-icons{
+    color: #374342;
+}
+
+.barra-navegacion nav{
+    padding: 10px 0;
+}
+
+.barra-navegacion ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: #374342
+}
+
+.barra-navegacion ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.barra-navegacion a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*----------------------------------------------------------*/
+
+/* HEADER */
+
+header{
+    margin-top: 116px;
+    width: 100%;
+    height: 400px;
+    background: #2C3E50;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(189, 16%, 9%, 0.658), hsla(210, 29%, 24%, 0.637)), url(./img/programacion.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50cd, hsla(210, 29%, 24%, 0.637)), url(./img/programacion.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+
+nav{    
+    margin: auto;
+    text-align: right;
+    color: white;
+    display: flex;
+}
+
+nav h4{
+    margin:auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    color: #ddddddd3;
+}
+
+.titulo-principal h1{
+    padding-top: 6%;
+    padding-bottom: 2%;
+    font-size: 50px;
+}
+
+.titulo-principal h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/*----------------------------------------------------------*/
+
+/* MAIN */
+
+.contenedor{
+    padding: 60px 0;
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+    overflow: hidden;
+}
+
+/*----------------------------------------------------------*/
+
+/* PRESENTACIÓN */
+
+.titulo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #374342;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+
+.img{
+    margin-right: 20px;
+    padding: 3px;
+    padding-bottom: 10px;
+    border-radius: 300px;
+}
+
+.contenedor-presentacion{
+    display: flex;
+    justify-content: space-evenly;
+    color: #374342d8
+}
+
+/*----------------------------------------------------------*/
+
+/*BIENVENIDA*/
+
+.bienvenida p {
+    color: #374342d8
+}
+
+.bienvenida ul li{
+    font-family: "Latin Modern Roman";
+    font-size: 20px;
+}
+
+h4{
+    color: #374342;
+    padding: 10px;
+}
+
+/*----------------------------------------------------------*/
+
+/*SOBRE MÍ*/
+.sobre-mi-bloque{
+    display: flex;
+}
+
+.habilidades-bloque{
+    color: #374342;
+    padding: 2%; 
+    justify-content: space-evenly;
+}
+
+.formacion-bloque{
+    color: #374342;
+    padding: 3%;
+    justify-content: space-evenly;
+}
+
+.img-lenguajes{
+    padding: 2%;
+    padding-left: 10%;
+    margin:0%;
+}
+
+/*----------------------------------------------------------*/
+
+/* GALERIA */
+
+.galeria-section{
+    background: #3d40440d;
+}
+
+.galeria-section h2{
+    color: #2C3E50;
+}
+
+.galeria{
+    width: 100%;
+}
+
+.botones{
+    margin-top: 1%;
+    text-align: center;
+}
+
+#retroceder, #avanzar{
+    background-color: #2C3E50;
+    width: 100px;
+    font-family: cursive;
+    border-radius: 2px;
+    margin-left: 1%;
+    border: none;
+    color: aliceblue;
+}
+
+/*----------------------------------------------------------*/
+
+/* VIDEO */
+
+.vdo{
+    width: 100%;
+    margin-left: 150px;
+}
+
+
+/*----------------------------------------------------------*/
+
+/*SEGUNDO CUERPO*/
+.segundo-cuerpo{
+    background-color: #ddddddc5;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+.musica{
+    padding: 60px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.musica h4{
+    font-family: cursive;
+    text-align: center;
+}
+
+.msc1, .msc2, .msc3{
+    margin-bottom: 30px;
+}
+
+.imgm1, .imgm2, .imgm3, .imgm4{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* RECOMENDACIÓN */
+
+#datos{
+    margin-top: 7%;
+    text-align: left;
+}
+
+.recomendacion{
+    width: 100%;
+    margin-left: 8%;
+}
+
+.titulo-datos{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+
+.form{
+    padding: 10px;
+}
+
+.nc{
+    margin-left: 1%;
+}
+
+.nm{
+    margin-left: 2%;
+}
+
+#nombre, #apellido{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 70%;
+    border-radius: 5%;
+    border-color: #37434290;
+}
+
+#nombreCancion, #nombreArtista, #link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 87%;
+    border-radius: 5%;
+    border-color: #37434290;
+}
+
+.recomendacion label{
+    color: #374342;
+}
+
+#comentario{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 87%;
+    height: 100px;
+    border-radius: 5%;
+    border-color: #37434290;
+}
+
+.enviar{
+    width: 35%;
+    padding: 2px;
+    background: #2C3E50;
+    color: aliceblue;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.enviar-up{
+    text-align: center;
+}
+
+/*----------------------------------------------------------*/
+
+/* FOOTER */
+
+.footer-cont{
+    padding: 80px;
+}
+
+.footer{
+    background-color: hsla(188, 17%, 9%, 0.849);
+    color: #ddddddc5;
+}
+
+.titulo-pie{
+    color: #ddddddc5;
+    font-size: 13px;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 13px;
+}   
+
+.webs{
+    display: flex;
+    
+}
+
+.linea{
+    margin: 10px;
+}
+
+.footer2{
+    padding-left: 150px;
+    padding-right: 150px;
+}

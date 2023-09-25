@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de cambio</title>
+    <script>
+        function cambiarMoneda(){
+            // obtener el valor ingresado en el campo de monto
+            var monto = parseFloat(document.getElementById("monto").value);
+
+            // Obtener el tipo de moneda seleccionado
+            var tiposMonedas = document.getElementsByName('tipoMoneda');
+            var tipoMoneda;
+            for (var i = 0; i < tiposMonedas.length; i++){
+                if (tiposMonedas[i].checked){
+                    tipoMoneda = tiposMonedas[i].value;
+                    break;
+                }
+            }
+
+            // Obtener el tipo de cambio seleccionado
+            var tiposCambios = document.getElementsByName('tipoCambio');
+            var tipoCambio;
+            for(var j = 0; j < tiposCambios.length; j++){
+                if (tiposCambios[j].checked){
+                    tipoCambio = tiposCambios[j].value;
+                    break;
+                }
+            }
+
+            // Calcular el cambio
+            var totalRecibir;
+            if (tipoMoneda === "dolar" && tipoCambio === "soles"){
+                totalRecibir = monto * 3.73;
+                alert("Total a recibir: S/. "+ totalRecibir.toFixed(2));
+            } else if (tipoMoneda === "dolar" && tipoCambio === "euro"){
+                totalRecibir = monto * 0.94;
+                alert("Total a recibir: €. "+ totalRecibir.toFixed(2));
+            } else if (tipoMoneda === "soles" && tipoCambio === "dolar"){
+                totalRecibir = monto * 0.27;
+                alert("Total a recibir: $. "+ totalRecibir.toFixed(2));
+            } else if (tipoMoneda === "soles" && tipoCambio === "euro"){
+                totalRecibir = monto * 0.25;
+                alert("Total a recibir: €. "+ totalRecibir.toFixed(2));
+            } else if (tipoMoneda === "euro" && tipoCambio === "dolar"){
+                totalRecibir = monto * 1.07;
+                alert("Total a recibir: $. "+ totalRecibir.toFixed(2));
+            } else if (tipoMoneda === "euro" && tipoCambio === "soles"){
+                totalRecibir = monto * 3.97;
+                alert("Total a recibir: S/. "+ totalRecibir.toFixed(2));
+            } else{
+                alert("Seleccione adecuadamente los campos")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Casa de Cambio</h1>
+    <p>Seleccione el tipo de moneda:</p>
+    <input type="radio" name="tipoMoneda" value="dolar" >Dolares
+    <input type="radio" name="tipoMoneda" value="soles" >Soles
+    <input type="radio" name="tipoMoneda" value="euro" >Euros
+
+    <p>Ingrese el monto:</p>
+    <input type="text" id="monto" placeholder="Ingrese el monto">
+
+    <p>Seleccione el tipo de cambio:</p>
+    <input type="radio" name="tipoCambio" value="dolar" >Dolares
+    <input type="radio" name="tipoCambio" value="soles" >Soles
+    <input type="radio" name="tipoCambio" value="euro" >Euros <br> <br>
+
+    <button type="button" onclick="cambiarMoneda()">Cotizar</button>
+</body>
+</html>
